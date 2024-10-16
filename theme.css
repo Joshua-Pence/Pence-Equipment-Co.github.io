@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --accent-color: rgb(75, 75, 75);
+    --base-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+    --input-color: rgb(220, 220, 220);
+}
+.darkmode {
+    --accent-color: rgb(75, 75, 75);
+    --base-color: rgb(34, 34, 34);
+    --text-color: rgb(255, 255, 255);
+    --input-color: rgb(220, 220, 220);
+}
+#themeToggle {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+#themeToggle svg:last-child{
+    display: none;
+}
+.darkmode #themeToggle svg:first-child{
+    display: none;
+}
+.darkmode #themeToggle svg:last-child{
+    display: block;
+}

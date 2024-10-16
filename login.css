@@ -11,7 +11,12 @@
     --text-color: rgb(0, 0, 0);
     --input-color: rgb(220, 220, 220);
 }
-
+.darkmode {
+    --accent-color: rgb(75, 75, 75);
+    --base-color: rgb(34, 34, 34);
+    --text-color: rgb(255, 255, 255);
+    --input-color: rgb(220, 220, 220);
+}
 html {
     font-family: poppins, sans-serif, Helvetica;
     font-size: 16px;
@@ -22,7 +27,8 @@ html {
 body {
     height: 100vh;
     overflow: hidden;
-    background-image: url('resources/photos/background/pexels-life-of-pix-8892.jpg');
+    background-color: var(--base-color);
+    color: var(--text-color);
 }
 
 
